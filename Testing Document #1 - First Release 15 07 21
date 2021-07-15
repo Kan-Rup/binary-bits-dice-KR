@@ -1,0 +1,213 @@
+
+TESTING #1 for Binary-bits-dice project 'First Release 15/07/21'
+================================================================
+
+Testing below points completed by KR on 15/07/2021
+---------------------------------------------------
+
+
+
+1. program launch
+
+    1.1 launch command for program is clear                                         CLEAR       existing text adequate
+
+    1.2 program launches correctly                                                  CLEAR       program launches to main menu
+
+
+    
+    
+2. roll dice once
+
+    2.1 method selection :
+
+        2.1.1 choose cast dice method 1
+    
+            2.1.1.1 right method 1 is used in calculation                           CLEAR       existing code correct
+    
+            2.1.1.2 output, method 1 calculation is done accurately                 CLEAR       existing code correct
+    
+        2.1.2 choose cast dice method 2
+
+            2.1.2.1 right method 2 is used in calculation                           CLEAR       existing code correct
+        
+            2.1.2.2 output, method 2 calcualtion is done accurately                 CLEAR       existing code correct
+            
+            
+        2.1.3 escape from method choice option : use correct escape code            CLEAR       !! number 4 was used as exit code previously
+                                                                                                this same user prompt is also used in multiple
+                                                                                                rolls function.
+                                                                                                code-4 was changed to 'c' as in 'cancel'.
+                                                                                                
+                                                                                                
+                                                                                                
+            
+    
+    
+3. do multiple rolls
+
+    3.1.1 make sure divide by zero problem is fixed                                   CLEAR     after the two below issues fixed, the
+                                                                                                error no longer showed up. 0 average occurs
+                                                                                                but no division by 0 error occurs, the code
+                                                                                                handles the issue.
+                                                                                                
+    3.1.1.2 : pressing enter without entering a value results in program crashing     CLEAR     input validation was added to check if a 'None'
+              at the enter rolls-number / sets number prompts                                   value was being passed, it was not
+              also entering a letter that is not 'c' causes program to crash                    input validation check added to check if a
+                                                                                                "" empty string was being passed, it was.
+                                                                                                
+                                                                                                had to remove 'raise TypeError' statement and
+                                                                                                put the error text at string-int conversion line
+                                                                                                and also add a 'continue' to redo the prompt
+                                                                                                loop.
+    
+    3.1.2 make sure 0 average value issue is fixed                                    CLEAR     0 average, can occur but does not break the code.
+    
+    
+    
+    3.2 choice of rolls per set
+        3.2.1 correct number of rolls rolled
+        3.2.2 prompt discarded on previous cancellation selection                   CLEAR       code 'q' was being checked instead of new 'c'
+    
+    3.3 choice of number of sets
+        3.3.1 correct number of sets rolled
+        3.3.2 prompt discarded on previous cancellation selection                   CLEAR       code 'q' was being checked instead of new 'c'
+    
+    3.4 method selection prompt
+    
+        3.4.0.1 method selection prompt : 
+                        code-c is used to cancel prompt                             CLEAR       changes made to seperate function worked.
+        
+        3.4.0.2 method selection cancelling :                                       CLEAR       changed exit code check from 'q' to 'c',
+                        requires to next prompts to be discarded                                the process functions correctly after this
+                        
+                                                                                                !! change broke the code, had to add in 
+                                                                                                new statements to fix functioning of the prompt.
+                                                                                                
+        3.4.1 choose method 1
+        
+            3.4.1.1 method 1 is used in calcualtion                                 CLEAR       code was correct
+            
+            3.4.1.2 method 1 calculation is done accurately                         CLEAR       code was correct
+        
+        3.4.2 choose method 2
+        
+            3.4.2.1 method 2 is used in calculation                                 CLEAR       code was correct
+            
+            3.4.2.2 method 2 calculation is done accurately                         CLEAR       code was correct
+    
+    
+    3.5 data file
+    
+        3.5.1 program makes a data file at end of processing multiple rolls         CLEAR       code was correct
+    
+        3.5.2 data is stored in the datafile correctly                              CLEAR       code was correct
+        
+        3.5.3 printing label for the data set                                       CLEAR       with invalid variable used, the data file was not being
+                                                                                                correctly made.
+                                                                                                there was an issue with altered variable names used in
+                                                                                                data set label.
+                                                                                                also added more information to the specific method info
+    
+    
+    3.6 program output text:
+    
+        3.6.1 text output is easy to understand to the reader                       CLEAR       spaced out the output text of the single roll option
+                                                                                                spaced out the output text of multiple roll option
+                                                                                                
+                                                                                                added a key to the roll-set collection results table
+                                                                                                changed the set-collection results output text:
+                                                                                                    now each line is labeled with a set-number,
+                                                                                                    it is clear which one is the dice-value,
+                                                                                                    and it is clear which is the occurence amount.
+        
+                                                                                                changed the value averages result from being displayed
+                                                                                                in one line, to being displayed as a list,
+                                                                                                one cube dice value average per line.
+                                                                                                this is easier to process to the reader.
+                                                                                                
+                                                                                                the method-1 method info text was updated to be
+                                                                                                easier to read and understand.
+                                                                                                method-2 method info text was updated to be
+                                                                                                easier to read and understand.
+                                                                                                
+    
+        3.6.2 output is consice, not spooled long                                   CLEAR       disabled function displayRollSetResult in 2 places. 
+                                                                                                long listing of all rolls of all sets, no longer is done.
+                                                                                                
+        3.6.3 the bar chart is accurate                                             CLEAR       chart bars show accurate proportions.
+                                                                                                note, some close by but different values are sometimes
+                                                                                                given same length bars.
+
+        3.6.4 the bar chart displays correctly on a small screen         ?Clear(possibly)       probably will display right on most desktops
+                                                                                                and laptops. There may be trouble with
+                                                                                                narrower screens (the bar chart bars may
+                                                                                                sometimes be too long - but with added bar length
+                                                                                                reducing feature, this is less likely).
+        
+        3.6.5 bar chart displays right with large contrasting averages              CLEAR       extreme contrasting bar lengths come up when
+                                                                                                rolling few sets, with medium small amount of
+                                                                                                rolls in each.
+                                                                                                e.g. (method 1) 1 set of 50 rolls 
+                                                                                                e.g. (method 2) 1 set of 20 rolls
+                                                                                                
+                                                                                                fixed. bars are displaying shorter with a
+                                                                                                check on min-max values, if the min-max
+                                                                                                difference is large, the bar lengths are
+                                                                                                divided by two.
+                                                                                                
+        3.6.5.2 the min-max division check divides the bar lengths by 2 as aproprate    CLEAR   there was a problem with implemented code
+                                                                                                if the non zero minimum average is also large,
+                                                                                                the problem on long bar lengths persist.
+                                                                                                so, the whole code feature that finds the
+                                                                                                non-zero minimum value had to be discarded.
+                                                                                             
+                                                                                                instead of non-zero next minimum, if 0 is the 
+                                                                                                actual minimum average, the the variable is assigned
+                                                                                                with 0.1, which makes it technically not zero for
+                                                                                                purposes of min-max contrast check.
+                                                                                                
+                                                                                                in the end, dividing by two is done as appropriate.
+        
+        
+        3.6.5.3 the related not-zero minimum finder finds the correct min index         CLEAR   the added code works.
+                                                                                                
+        
+    
+    
+    
+4 see how dice value is calculated
+
+        4.1 choice of method
+        
+            4.1.1 method 1 : correct information is displayed                       CLEAR       information correct. options trigger right #method
+
+            4.1.2 method 2 : correct information is displayed                       CLEAR       information correct. options trigger right #method
+            
+    
+    
+    
+5 read program about info
+
+        5.1 add help text to the 'about' option. change that option text            CLEAR       help text was added to the 'about info' option.
+            in the main menu. explain in brief what the program is about 
+            and what to do with it.
+            
+        5.2 correct and adequate information is presented                           CLEAR       confirmed info is correct.
+        
+        
+6 exit program
+
+        6.1 the program exits correctly.                                            CLEAR       existing code functioned.
+ 
+
+7 The Code looks clear and readable                                                 ~~~~~       code will not be formatted further.
+
+
+8 All functions code sight checked                                                  ~~Partly    code was corrected and updated in a few places.
+                                                                                                hard inspection of the code itself was not done.
+                                                                                                the final testing above will have to have 
+                                                                                                validated the code.
+                                                                                                
+9 all comments validated - alterations to code not made comments inaccurate.        CLEAR       all comments were reviewed, updated, some corrected.
+    
+10 Final overall testing use of the code program to check all work as intended.     CLEAR       final checks done.
