@@ -211,3 +211,5 @@ Testing below points completed by KR on 15/07/2021
 9 all comments validated - alterations to code not made comments inaccurate.        CLEAR       all comments were reviewed, updated, some corrected.
     
 10 Final overall testing use of the code program to check all work as intended.     CLEAR       final checks done.
+
+11 The binary digits were displayed in incorrect order, back to front               CLEAR       Corrected code and comments. checked output is correct.
