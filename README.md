@@ -48,16 +48,8 @@ There is no warranty whatsoever for this software. KR states that there most pro
 parts of the first code to be implemented in better ways. Some parts of the first code are 
 most probably flawed.
 
-
 Please be aware that the open source code can be accessed by other developers, and any such developer
 may change the code according to their own intents. 
-
-I have no way of verifying intents and efforts of other sources, or separate developers. Such other code 
-source may have code that is quality and good, or the code may be badly written or written with bad intent.
-
-Use trustworthy people, places and sources to get your files. You might verify code yourself if you can.
-Malware detection tools may also help. But I make no guarantees of any kind here. Your safety efforts
-and decisions are yours.
 
 ------------------------------------------------------------------------------------------------------
 
