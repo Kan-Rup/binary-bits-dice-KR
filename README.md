@@ -45,8 +45,7 @@ personal statement:
 ------------------------------------------------------------------------------------------------------
  
 There is no warranty whatsoever for this software. KR states that there most probably is room for
-parts of the first code to be implemented in better ways. Some parts of the first code are 
-most probably flawed.
+parts of the first code to be implemented in better ways.
 
 Please be aware that the open source code can be accessed by other developers, and any such developer
 may change the code according to their own intents. 
