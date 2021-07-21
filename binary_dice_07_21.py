@@ -34,9 +34,6 @@
     # You would update that with the relevant details and changes made also.
     # (so, there will be a history of who made what changes).
     #
-    # Use trustworthy people, places and sources to get your files. You might verify
-    # code yourself if you can. Malware detection tools may also help. But I make no guarantees
-    # of any kind here. Your safety decisions and efforts are yours.
     # 
     #
     #
