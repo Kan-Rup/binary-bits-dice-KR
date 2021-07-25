@@ -67,11 +67,11 @@ Testing file updated on 16/07/21
     
     
     3.2 choice of rolls per set
-        3.2.1 correct number of rolls rolled
+        3.2.1 correct number of rolls rolled                                        CLEAR       tested
         3.2.2 prompt discarded on previous cancellation selection                   CLEAR       code 'q' was being checked instead of new 'c'
     
     3.3 choice of number of sets
-        3.3.1 correct number of sets rolled
+        3.3.1 correct number of sets rolled                                         CLEAR       tested
         3.3.2 prompt discarded on previous cancellation selection                   CLEAR       code 'q' was being checked instead of new 'c'
     
     3.4 method selection prompt
