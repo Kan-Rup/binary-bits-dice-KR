@@ -133,7 +133,7 @@ Testing file updated on 16/07/21
                                                                                                 easier to read and understand.
                                                                                                 
     
-        3.6.2 output is consice, not spooled long                                   CLEAR       disabled function displayRollSetResult in 2 places. 
+        3.6.2 output is concise, not spooled long                                   CLEAR       disabled function displayRollSetResult in 2 places. 
                                                                                                 long listing of all rolls of all sets, no longer is done.
                                                                                                 
         3.6.3 the bar chart is accurate                                             CLEAR       chart bars show accurate proportions.
